@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Demo Application'
-        bat 'bat run_build_script.bat'
+        bat 'sh C:\\Program Files\\Git\\usr\\bin\\run_build_script.sh'
       }
     }
 
