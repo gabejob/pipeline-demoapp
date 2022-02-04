@@ -1,15 +1,10 @@
 pipeline {
-  agent {
-    node {
-      label 'test'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
         echo 'Build Demo Application'
-        sh 'sh run_build_script.sh'
+        bat 'sh -c run_build_script.sh'
       }
     }
 
@@ -18,7 +13,7 @@ pipeline {
         stage('Linux Tests') {
           steps {
             echo 'Run Linux tests'
-            sh 'sh run_linux_tests.sh'
+            bat 'sh -c run_linux_tests.sh'
           }
         }
 
