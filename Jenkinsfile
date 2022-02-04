@@ -41,7 +41,7 @@ pipeline {
 
   }
   environment {
-    PATH = 'C:\\Program Files\\Git\\bin & C:\\Program Files\\Git\\bin'
+    PATH = 'C:\\git-for-windows\\usr\\bin\\'
   }
   post {
     always {
