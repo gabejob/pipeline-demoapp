@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Demo Application'
-        bat 'bat C:\\Program Files\\Git\\usr\\bin\\run_build_script.sh'
+        bat 'C:\\Program Files\\Git\\usr\\bin\\run_build_script.sh'
       }
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Linux Tests') {
           steps {
             echo 'Run Linux tests'
-            bat 'bat run_linux_tests.bat'
+            bat 'run_linux_tests.sh'
           }
         }
 
