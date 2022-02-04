@@ -40,9 +40,6 @@ pipeline {
     }
 
   }
-  environment {
-    PATH = 'C:\\Program Files\\Git\\usr\\bin'
-  }
   post {
     always {
       archiveArtifacts(artifacts: 'target/demoapp.jar', fingerprint: true)
