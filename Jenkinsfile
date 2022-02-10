@@ -9,6 +9,9 @@ pipeline {
     }
 
     stage('Linux Tests') {
+      environment {
+        Path = 'C:\\Users\\gabriel.job\\AppData\\Local\\Programs\\Git\\bin'
+      }
       parallel {
         stage('Linux Tests') {
           steps {
